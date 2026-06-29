@@ -1,0 +1,15 @@
+/* Import Amaranth font from font bunny */
+/* After styling, delete unnecessary imports */
+@import url(https://fonts.bunny.net/css?family=amaranth:400);
+@import url(https://fonts.bunny.net/css?family=amaranth:400i);
+@import url(https://fonts.bunny.net/css?family=amaranth:700);
+@import url(https://fonts.bunny.net/css?family=amaranth:700i);
+
+body {
+  font-family: 'Amaranth', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ 
+.picture {
+    width: 100vw;
+    height: auto;
+}
