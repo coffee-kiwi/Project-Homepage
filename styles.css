@@ -85,7 +85,6 @@ img {
 
 .picture {
     position: relative;
-
 }
 
 .author {
@@ -94,6 +93,10 @@ img {
     bottom: 8px;
     transform: translateX(-50%);
 }
+.author-tablet {
+    display: none;
+}
+
 .icons {
     display: flex;
 }
@@ -114,6 +117,53 @@ ul {
 /* Configure responsive layout for table size below */
 
 @media (min-width: 500px) and (max-width: 900px) {
+
+    .un-skew-bg {
+        display: block;
+        padding: 32px;
+    }
+
+    .picture img {
+        position: relative;
+        float: left; 
+        width: 40vw;
+        height: auto;
+        margin: 15px;
+        z-index: 2;
+     }  
+      
+    .about-me {
+        display: block;
+        position: relative; 
+        top: 60%;
+        background-color: #Fcf3e3;
+        box-shadow: 2px 2px 4px 1px grey;
+    }
+    .space {
+        height: 150px;
+        width: 100%;
+    }
+    .about-me h1 {
+        padding-top: 24px;
+    }
+ 
+    .about-me p {
+        padding: 24px;
+        padding-right: 50px;
+        position: relative;
+        font-size: larger;
+    }
+    .author {
+        display: none;
+    }
+    .author-tablet {
+        position: absolute;
+        top: 60px;
+        right: 40%;
+        z-index: 2;
+        /* transform: translateZ(500px); */
+        font-size: 3.5rem;
+    }
 
     .project-section {
         display: grid;

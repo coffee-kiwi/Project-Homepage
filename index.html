@@ -9,23 +9,27 @@
     <body>
         <header>
             <div class="un-skew-bg">
-                <div class="picture">
-                    <picture>
-                        <source srcset="img/me_one_s.jpg" media="(max-width: 400px)"/>
-                        <source srcset="img/me_one_m.jpg" media="(max-width:900px)"/>
-                        <img src="img/me_one.JPG" alt="Author sitting next to fountain">
-                    </picture>    
-                    <h1 class="author">Conor</h1>
-                </div>
                 
-                <section class="about-me">
-                    <h1>About me</h1>
-                    <p>I'm from New Zealand. I've been living in Japan for about 8 years now.
-                        I love snowboarding, hiking, outside barbecues. Recently, I have
-                        started doing a garden project in the backyard.
-                        Been studying web development for almost 1 year now. Have gained
-                        experience in Ruby, Rails, HTML, CSS, and Javascript.
-                    </p>
+                    <div class="picture">
+                        <picture>
+                            <source srcset="img/me_one_s.jpg" media="(max-width: 400px)"/>
+                            <source srcset="img/me_one_m.jpg" media="(max-width: 900px)" class="left"/>
+                            <img src="img/me_one.JPG" alt="Author sitting next to fountain" class="left">
+                            
+                        </picture>    
+                        <h1 class="author">Conor</h1>
+                    </div>
+                    <div class="space"><h1 class="author-tablet">Conor</h1></div>
+                    <section class="about-me">
+                        
+                        <h1>About me</h1>
+                        <p>I'm from New Zealand. I've been living in Japan for about 8 years now.
+                            I love snowboarding, hiking, outside barbecues. Recently, I have
+                            started doing a garden project in the backyard.
+                            Been studying web development for almost 1 year now. Have gained
+                            experience in Ruby, Rails, HTML, CSS, and Javascript.
+                        </p>
+                    
                 </section>
             </div>
         </header>
@@ -34,7 +38,7 @@
             <section class="project-section">
                 <article class="project-a">
                     <div class="picture">
-                        <picture>
+                        <picture class="picture">
                             <source srcset="img/odinbook_s.png" media="(max-width: 400px)"/>
                             <source srcset="img/odinbook_m.png" media="(max-width:800px)"/>
                             <img src="img/odinbook.png" alt="Profile page from odinbook project">
