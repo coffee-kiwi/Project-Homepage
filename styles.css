@@ -172,9 +172,9 @@ ul {
     }
 
     footer {
-        flex-direction: row;
-        align-items: stretch;
-        gap: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
         padding: 32px;
         background-color: var(--green-color);
     }
