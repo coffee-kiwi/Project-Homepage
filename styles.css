@@ -5,11 +5,105 @@
 @import url(https://fonts.bunny.net/css?family=amaranth:700);
 @import url(https://fonts.bunny.net/css?family=amaranth:700i);
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f4a258;
+  --green-color: #708c69;
+  --dark-color: #013D5a;
+  --bg-color: #Fcf3e3;
+  --bg-blue: #8dd3ce;
+}
+
 body {
   font-family: 'Amaranth', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--dark-color);
+    transform: skew(0deg, -30deg) translateY(-400px);
 }
  
-.picture {
-    width: 100vw;
+main,
+header,
+footer,
+.un-skew-bg,
+.about-me,
+.project-section,
+.project-a,
+.project-b,
+.contact,
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 8px;
+}
+
+.un-skew-bg {
+        transform: skew(0deg, 30deg) translateY(400px);
+}
+
+.project-section {
+    gap: 60px;
+}
+
+.project-a,
+.project-b {
+    background-color: var(--primary-color);
+    box-shadow: 4px 4px 4px grey;
+}
+
+.project-b {
+    background-color: var(--green-color);
+}
+
+svg {
+    width: 2rem;
     height: auto;
+}
+
+li svg {
+    width: 1.5rem;
+    height: auto;
+}
+li {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    box-shadow: 4px 4px 4px grey;
+}
+
+.picture {
+    position: relative;
+}
+
+.author {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+}
+.icons {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact {
+    background-color: var(--green-color);
+}
+.contact-list {
+    align-items: flex-start;
+    gap: 8px;
 }
